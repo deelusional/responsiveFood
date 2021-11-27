@@ -1,7 +1,7 @@
 body {
-  font-family: 'Open Sans' sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
-  background-color: rgb(44,41,38);
+  background-color: rgb(44, 41, 38);
 }
 
 a {
@@ -13,21 +13,34 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(29,26,24);
+  background-color: rgb(29, 26, 24);
   padding: 0 5%;
 }
 
 #logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(238,164,80);
+  color: rgb(238, 164, 80);
   text-transform: uppercase;
+}
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
 }
 
 #main-header ul {
   list-style: none;
   display: flex;
-  /* Take care of any default margin and padding in ul */
   margin: 0;
   padding: 0;
 }
@@ -37,12 +50,12 @@ a {
 }
 
 #main-header nav a {
-  color: rgb(185,131,31);
+  color: rgb(185, 131, 31);
   font-size: 1.25rem;
 }
 
 #main-header nav a:hover {
-  color: rgb(228,163,44);
+  color: rgb(228, 163, 44);
 }
 
 main h1 {
@@ -60,16 +73,14 @@ main h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  /* Take care of any default margin/padding */
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .food-item {
-  background-color: rgb(228,206,182);
+  background-color: rgb(228, 206, 182);
   border-radius: 6px;
-  /* fix the top corners (to round the corners)on images with overflow: hidden; */
   overflow: hidden;
 }
 
@@ -82,10 +93,6 @@ main h1 {
 .food-item-content {
   padding: 1rem;
   text-align: center;
-}
-
-h2 {
-  font-size: 2rem;
 }
 
 .btn {
